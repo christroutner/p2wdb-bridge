@@ -15,7 +15,8 @@ class BridgeUseCases {
   async start () {
     try {
       const webhookUri = `${config.v4P2wdbUrl}/webhook`
-      const webhookTarget = 'http://localhost:5020/p2wdb'
+      // const webhookTarget = 'http://localhost:5020/p2wdb'
+      const webhookTarget = `${config.webhookTarget}/p2wdb`
 
       const postBody = {
         url: webhookTarget,

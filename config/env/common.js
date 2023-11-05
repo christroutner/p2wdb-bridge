@@ -108,5 +108,6 @@ export default {
 
   v4P2wdbUrl: 'http://localhost:5667',
   // v5P2wdbUrl: 'http://78.46.129.7:5667'
-  v5P2wdbUrl: 'http://localhost:6667'
+  v5P2wdbUrl: 'http://localhost:6667',
+  webhookTarget: 'http://localhost:5020'
 }
