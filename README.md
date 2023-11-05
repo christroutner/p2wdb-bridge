@@ -6,6 +6,8 @@
 
 This repository is forked from the [no-ipfs branch of ipfs-service-provider](https://github.com/Permissionless-Software-Foundation/ipfs-service-provider/tree/no-ipfs). It's a temporary code base. It's intended to installed on VPS server. It subscribes to a v4 P2WDB webhooks for all new entries. It then rebroadcasts the entry to a v5 P2WDB.
 
+The main change to this code base is `src/controllers/rest-api/p2wdb/controller.js`, that is the handler that is triggered by a v4 P2WDB new entry. It retrieves the entry from the v4 P2WDB and submits it to a v5 P2WDB.
+
 ## License
 
 [MIT](./LICENSE.md)

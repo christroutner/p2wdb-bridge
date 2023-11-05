@@ -104,5 +104,9 @@ export default {
 
     // v1 & v2 Circuit Relay server (FullStack.cash)
     '/ip4/78.46.129.7/tcp/4002/p2p/12D3KooWR8URLT2d85MSKMUAHB2poADNz1jbrsGNL1GAjA1cZtTY'
-  ]
+  ],
+
+  v4P2wdbUrl: 'http://localhost:5667',
+  // v5P2wdbUrl: 'http://78.46.129.7:5667'
+  v5P2wdbUrl: 'http://localhost:6667'
 }
