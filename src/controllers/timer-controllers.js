@@ -46,9 +46,12 @@ class TimerControllers {
   }
 
   // Replace this example function with your own timer handler.
-  exampleTimerFunc (negativeTest) {
+  async exampleTimerFunc (negativeTest) {
     try {
       console.log('Example timer controller executed.')
+
+      // Renew the webhook.
+      await this.useCases.bridge.start()
 
       if (negativeTest) throw new Error('test error')
 
